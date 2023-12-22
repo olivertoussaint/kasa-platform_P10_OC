@@ -1,0 +1,22 @@
+ .error{
+      font-size: 3.2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $primary-color;
+      font-weight: $bold-weight;
+      margin: 50px auto;
+
+      &__text {
+            font-weight: $medium-weight;
+            font-size: 1.5rem;
+            margin: 50px;
+      }
+}
+.backToHomePage {
+      font-weight: $medium-weight;
+      color: $primary-color;
+      font-size: 1rem;
+      margin: 50px;
+}

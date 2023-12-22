@@ -1,0 +1,12 @@
+@import "./Utils/variables";
+@import "./Utils/mixins";
+
+@import "./Base/base";
+
+@import "../Header/Header";
+@import "../Navbar/Navbar";
+@import "../Banner/BannerHome";
+@import "../Banner/BannerAbout";
+@import "../Card/Card";
+@import "../Footer/Footer";
+@import "../ErrorPage/ErrorPage";

@@ -1,0 +1,21 @@
+$primary-color: #FF6060;
+$tertiary-color: #FFFFFF;
+
+$footer-color: #000000;
+$background-color: #F6F6F6;
+$background-color-card: linear-gradient(rgb(254,99,99), rgb(230,106,106) , rgb(146,61,61));
+
+$medium-weight: 500;
+$bold-weight: 700;
+
+$regular-font-size: 18px;
+$large-font-size: 24px;
+
+$background-banner: $background-color url(../../../assets/images/background-banner.png) no-repeat center;
+$background-banner-about: url(../../../assets/images/about-background.png) no-repeat center;
+
+
+$breakpoint-desktop: 769px;
+
+$min-width: 375px;
+$max-width: 768px;
