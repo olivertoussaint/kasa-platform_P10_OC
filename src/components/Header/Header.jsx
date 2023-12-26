@@ -6,9 +6,7 @@ function Header() {
   return (
     <>
     <header className="header-wrap">
-      <figure>
-            <img src={logo} alt="logo kasa-platform" className="logo" />
-      </figure>
+      <img src={logo} alt="logo kasa-platform" className="logo" />
       <Navbar />
     </header>
     

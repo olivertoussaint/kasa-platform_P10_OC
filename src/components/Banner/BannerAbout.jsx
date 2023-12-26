@@ -1,12 +1,13 @@
 import React from 'react'
+import bannerAboutImage from '../../assets/images/about-background.png'
 
 function BannerAbout() {
   return (
+   
     <div className="banner-about-container">
-      <figure className="banner-background-image">
-            
-      </figure>
+      <img  src= {bannerAboutImage} alt="bannière à propos"  />
     </div>
+    
   )
 }
 

@@ -1,19 +1,22 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
-import accommodations from "../../Datas/accommodation.json"
-//  import Card from '../Card/Card'
+import accommodations from '../../datas/accommodation.json'
+import Card from '../Card/Card'
 
-const Gallery = () => {
-      return (
-            <div className="home_gallery">
-                  {accommodations.map((accommodation) => {
-                        return (
-                              console.log(accommodation)
-                              
-                         )
-                  })}
-            </div>
-      )
+function Gallery() {
+  return (
+    <div className="home_gallery">
+      {accommodations.map((accomodation, index) => {
+            return (
+                  <article key={ index }>
+                        <Card picture={accomodation.cover} 
+                              title={accomodation.title} 
+                        />
+                  </article>
+            )
+      })}
+
+    </div>
+  )
 }
 
 export default Gallery

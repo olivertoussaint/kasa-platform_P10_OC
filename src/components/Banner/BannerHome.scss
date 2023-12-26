@@ -1,6 +1,20 @@
 .banner-container {
+      height: 223px;
+      margin-bottom: 30px;
+      position: relative;
+}
+
+.banner_img, .banner_overlay {
       @include small-radius;
-      @include flex-banner;
+      height: 100%;
+      width: 100%;   
+}
+
+.banner_overlay {
+      @include small-radius;
+      background-color: $background-color;
+      position: absolute;
+      top: 0;
 }
 
 .banner-text {
@@ -11,4 +25,13 @@
       color: $tertiary-color;
       @include small-radius;
       @include font-display;
+}
+
+.banner-text p {
+      position: relative;
+      bottom: 140px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
 }
