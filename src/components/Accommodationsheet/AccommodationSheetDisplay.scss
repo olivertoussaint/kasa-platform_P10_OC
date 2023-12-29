@@ -1,0 +1,54 @@
+
+.chambers-sheet-container {
+      color: $primary-color;
+}
+.chambers-sheet {
+      display: flex;
+      flex-direction: column;
+}
+
+.description-info {
+      display: flex;
+      justify-content: space-between;
+
+      &__owner {
+            display: flex;
+            flex-direction: column;
+
+            &__name {
+                  display: flex;
+                  align-items: center;
+            }
+      }
+
+      &__tags {
+            display: flex;
+            flex-direction: column;
+
+
+            &__tags {
+                  display: flex;
+            }
+
+            &__title {
+                  display: flex;
+                  flex-direction: column;
+            }
+      }
+
+}
+
+.accommodation-title {
+      font-size: $xl-font-size;
+      font-style: $normal-style;
+}
+
+.owner-picture {
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+}
+
+.owner-name {
+      width: 93px;
+}

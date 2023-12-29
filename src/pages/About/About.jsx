@@ -9,7 +9,6 @@ function About() {
     <>
       <main className="main-wrapper">
         <BannerAbout />
-  
   <div className="collapse">
     <div className="collapse_dropdown">
       {CollapseData.map((elt) => {

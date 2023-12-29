@@ -1,0 +1,13 @@
+.tag-container {
+      display: flex;
+
+      &__button {
+            display: flex;
+            flex-direction: column;
+            background: $primary-color;
+            color: $tertiary-color;
+            padding: 2px 10px;
+            border-radius: 10px;
+            margin: 0 10px 0 0;
+      }
+}

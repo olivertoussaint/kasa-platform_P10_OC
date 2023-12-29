@@ -4,7 +4,7 @@ import pictureOne from '../../assets/images/vector-bas.svg'
 import pictureTwo from '../../assets/images/vector-haut.svg'
 
 const Collapse = ({title, content}) => {
-
+  // Déclare une nouvelle variable d'état
   const [isOpen, setOpen] = useState(false)
 
   const display = () => {
