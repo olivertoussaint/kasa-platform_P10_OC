@@ -5,6 +5,8 @@ function Slideshow({slides}) {
   const [current, setCurrent] = useState(0) //!le premier slide est défini à 0
   const length = slides.length //*ici on défini la longueur du tableau
 
+// TODO finir le slideShow
+
 
   return (
     <>
