@@ -14,7 +14,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-radius: 5px;
+       @include small-radius;
       padding: 10px 20px;
       margin: 10px 0;
       color: $tertiary-color;
@@ -22,12 +22,14 @@
 }
 
 .collapse_dropdown_title h2 {
-      font-size: $large-font-size;
-      font-weight: $medium-weight;
+      font-size: $regular-font-size;
+      font-weight: $regular-weight;
       line-height: 34.22px
 }
 
-.collapse_dropdown_content p {
+.collapse_dropdown_content .open {
+      position: relative;
+      bottom: 10px;
       @include small-radius;
       color: $primary-color;
       padding: 5px 20px;
@@ -36,24 +38,39 @@
       font-weight: $medium-weight;
       line-height: 132%;
       animation: visibility .3s ease-in;
+      height: auto;
+}
+
+.collapse_dropdown_content .close {
+      display: none;
 }
 
 p img {
       cursor: pointer;
 }
 
+.initial-position {
+	transform: rotate(0deg);
+	transition: .3s ease-in-out;
+}
+
+.rotated {
+      transform: rotate(180deg);
+	transition: .4s ease-in-out;
+}
+
 @keyframes visibility {
       from {
             opacity: 0;
+           transform: translateY(-5px);
       }
 
       50% {
-            opacity: .5;
+            transform: translateY(0px);
       }
-      75% {
-            opacity: .8;
-      }
+      
       to {
             opacity: 1;
       }
 }
+

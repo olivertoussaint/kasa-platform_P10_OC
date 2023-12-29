@@ -4,7 +4,8 @@ import ChambersSheetDatas from '../../datas/accommodation.json'
 import Collapse from '../Collapse/Collapse';
 import Tag from './Tag';
 import Host from './Host';
-// import Slideshow from './Slideshow';
+import Slideshow from './Slideshow';
+import Star from './Star';
 
 const AccommodationSheetDisplay = () => {
       // Le useParams hook renvoie un objet de paires clé/valeur des paramètres dynamiques de l'URL actuelle
@@ -27,7 +28,7 @@ const AccommodationSheetDisplay = () => {
   return (
     <>
     <div className="chambers-sheet-container">
-                  {/* <Slideshow slides={chambersSheet.pictures} /> */}
+                  <Slideshow slides={chambersSheet.pictures} />
       <section className='chambers-sheet'>
             <div className="description-info">
                   <div className="description-info__tags">
@@ -48,7 +49,11 @@ const AccommodationSheetDisplay = () => {
                         <div className="description-info__owner__name">
                               <Host
                               name={chambersSheet.host.name} 
-                              picture={chambersSheet.host.picture}/>
+                              picture={chambersSheet.host.picture}
+                              />
+                        </div>
+                        <div className="description-info__owner__rate">
+                              <Star score={chambersSheet.rating} />
                         </div>
                   </div>
             </div>
@@ -58,7 +63,7 @@ const AccommodationSheetDisplay = () => {
     <div className="description-content">
       <div className="description-content__description">
     <Collapse
-      title='description'
+      title='Description'
       content={chambersSheet.description}
     />
 
