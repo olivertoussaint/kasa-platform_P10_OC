@@ -18,7 +18,7 @@
       padding: 10px 20px;
       margin: 10px 0;
       color: $tertiary-color;
-      animation: visibility .2s ease-in;
+      animation: visibility 0.2s ease-in;
 }
 
 .collapse_dropdown_title h2 {
@@ -37,7 +37,7 @@
       font-size: $medium-font-size;
       font-weight: $medium-weight;
       line-height: 132%;
-      animation: visibility .3s ease-in;
+      animation: visibility 0.3s ease-in;
       height: auto;
 }
 
@@ -51,12 +51,12 @@ p img {
 
 .initial-position {
 	transform: rotate(0deg);
-	transition: .3s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 
 .rotated {
       transform: rotate(180deg);
-	transition: .4s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 
 @keyframes visibility {
