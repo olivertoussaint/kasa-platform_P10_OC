@@ -42,7 +42,16 @@
 }
 
 .collapse_dropdown_content .close {
-      display: none;
+      position: relative;
+      bottom: 250px;
+      opacity: 0;
+      height: 0;
+      color: $primary-color;
+      background: $secondary-color;
+      font-size: $medium-font-size;
+      font-weight: $medium-weight;
+      line-height: 132%;
+      transition: bottom 250ms, opacity 100ms, height 10s 10s;
 }
 
 p img {
