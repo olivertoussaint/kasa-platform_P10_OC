@@ -1,85 +1,84 @@
 .collapse {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 20px 0;
-      width: 100%;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
 }
 .collapse_dropdown {
-      width: 80%;
+  width: 80%;
 }
 
 .collapse_dropdown_title {
-      background-color: $primary-color;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-       @include small-radius;
-      padding: 10px 20px;
-      margin: 10px 0;
-      color: $tertiary-color;
-      animation: visibility 0.2s ease-in;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include small-radius;
+  padding: 10px 20px;
+  margin: 10px 0;
+  color: $tertiary-color;
+  animation: visibility 0.2s ease-in;
 }
 
 .collapse_dropdown_title h2 {
-      font-size: $regular-font-size;
-      font-weight: $regular-weight;
-      line-height: 34.22px
+  font-size: $regular-font-size;
+  font-weight: $regular-weight;
+  line-height: 34.22px;
 }
 
 .collapse_dropdown_content .open {
-      position: relative;
-      bottom: 10px;
-      @include small-radius;
-      color: $primary-color;
-      padding: 5px 20px;
-      background: $secondary-color;
-      font-size: $medium-font-size;
-      font-weight: $medium-weight;
-      line-height: 132%;
-      animation: visibility 0.3s ease-in;
-      height: auto;
+  position: relative;
+  bottom: 10px;
+  @include small-radius;
+  color: $primary-color;
+  padding: 5px 20px;
+  background: $secondary-color;
+  font-size: $medium-font-size;
+  font-weight: $medium-weight;
+  line-height: 132%;
+  animation: visibility 0.3s ease-in;
+  height: auto;
 }
 
 .collapse_dropdown_content .close {
-      position: relative;
-      bottom: 250px;
-      opacity: 0;
-      height: 0;
-      color: $primary-color;
-      background: $secondary-color;
-      font-size: $medium-font-size;
-      font-weight: $medium-weight;
-      line-height: 132%;
-      transition: bottom 250ms, opacity 100ms, height 10s 10s;
+  position: relative;
+  bottom: 250px;
+  opacity: 0;
+  height: 0;
+  color: $primary-color;
+  background: $secondary-color;
+  font-size: $medium-font-size;
+  font-weight: $medium-weight;
+  line-height: 132%;
+  transition: bottom 250ms, opacity 100ms, height 10s 10s;
 }
 
 p img {
-      cursor: pointer;
+  cursor: pointer;
 }
 
 .initial-position {
-	transform: rotate(0deg);
-	transition: 0.3s ease-in-out;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
 }
 
 .rotated {
-      transform: rotate(180deg);
-	transition: 0.3s ease-in-out;
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
 }
 
 @keyframes visibility {
-      from {
-            opacity: 0;
-           transform: translateY(-5px);
-      }
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
 
-      50% {
-            transform: translateY(0px);
-      }
-      
-      to {
-            opacity: 1;
-      }
+  50% {
+    transform: translateY(0px);
+  }
+
+  to {
+    opacity: 1;
+  }
 }
-

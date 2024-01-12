@@ -1,43 +1,42 @@
 .card {
-    border-radius: 10px;
-    height: 340px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+  border-radius: 10px;
+  height: 340px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .card_img {
-      border-radius: inherit;
-      height: inherit;
-      object-fit: cover;
-      width: inherit;   
+  border-radius: inherit;
+  height: inherit;
+  object-fit: cover;
+  width: inherit;
 }
 
- .card:hover {
-      filter: grayscale(100%) contrast(120%);
-      box-shadow: 0px 0px 30px rgba(241, 90, 3, 0.944);
-      display: block;
-      transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-      margin: -2px 3px 0 0;
+.card:hover {
+  filter: grayscale(100%) contrast(120%);
+  box-shadow: 0px 0px 30px rgba(241, 90, 3, 0.944);
+  display: block;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin: -2px 3px 0 0;
 }
-
 
 .card_title {
-      position: absolute;
-      bottom: 0;
-      color: #fff;
-      font-size: 18px;
-      font-weight: $medium-weight;
-      margin: 15px 20px;
-      line-height: 25.67px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: $medium-weight;
+  margin: 15px 20px;
+  line-height: 25.67px;
 }
 
 .card_overlay {
-       @include linear-gradient;
-       border-radius: inherit;
-       height: 100%;
-       position: absolute;
-       top: 0;
-       width: 100%;
+  @include linear-gradient;
+  border-radius: inherit;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

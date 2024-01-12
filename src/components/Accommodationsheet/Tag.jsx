@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Tag({ name}) {
+function Tag({ name }) {
   return (
-    <div className='tag-container'>
-      <span className="tag-container__button">
-      {name}
-      </span>
+    <div className="tag-container">
+      <span className="tag-container__button">{name}</span>
     </div>
   )
 }

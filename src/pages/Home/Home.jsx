@@ -7,7 +7,7 @@ function Home() {
     <main className="main-wrapper">
       <Banner />
       <Gallery />
-    </main>  
+    </main>
   )
 }
 

@@ -1,12 +1,16 @@
 $primary-color: hsla(0, 100%, 69%, 1);
-$secondary-color:#F7F7F7;
+$secondary-color: #f7f7f7;
 $tertiary-color: hsla(0, 0%, 100%, 1);
 
 $footer-color: #000000;
-$background-color: rgba(0,0,0,.3);
-$background-color-card: linear-gradient(rgb(254,99,99), rgb(230,106,106) , rgb(146,61,61));
+$background-color: rgba(0, 0, 0, 0.3);
+$background-color-card: linear-gradient(
+  rgb(254, 99, 99),
+  rgb(230, 106, 106),
+  rgb(146, 61, 61)
+);
 
-$regular-weight:400;
+$regular-weight: 400;
 $medium-weight: 500;
 $bold-weight: 700;
 

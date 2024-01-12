@@ -1,100 +1,97 @@
-
 .chambers-sheet-container {
-      color: $primary-color;
+  color: $primary-color;
 }
 
 .rounded {
-      border-radius: 10px;
+  border-radius: 10px;
 }
 
 .chambers-sheet {
-      display: flex;
-      flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .description-info {
-      margin: 20px 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__owner {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
       display: flex;
+      align-items: center;
       justify-content: space-between;
+    }
+  }
 
-      &__owner {
-            display: flex;
-            flex-direction: column;
+  &__tags {
+    display: flex;
+    flex-direction: column;
 
-            &__name {
-                  display: flex;
-                  align-items: center;
-                  justify-content: space-between;
-            }
-      }
+    &__tags {
+      display: flex;
+      margin-bottom: 1em;
+    }
 
-      &__tags {
-            display: flex;
-            flex-direction: column;
-
-
-            &__tags {
-                  display: flex;
-                  margin-bottom: 1em;
-            }
-
-            &__title {
-                  display: flex;
-                  flex-direction: column;
-                  row-gap: 5px;
-            }
-      }
-
+    &__title {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+  }
 }
 
 .accommodation-title {
-      font-size: $xl-font-size;
-      font-style: $normal-style;
-      font-weight: $medium-weight;
+  font-size: $xl-font-size;
+  font-style: $normal-style;
+  font-weight: $medium-weight;
 }
 
 .accommodation-location {
-      margin-bottom: 1em;
-      font-weight: $medium-weight;
+  margin-bottom: 1em;
+  font-weight: $medium-weight;
 }
 
 .owner-picture {
-      border-radius: 50%;
-      width: 64px;
-      height: 64px;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
 }
 
 .owner-name {
-      width: 93px;
-      position: relative;
-      right: -17px;
-      text-align: right;
+  width: 93px;
+  position: relative;
+  right: -17px;
+  text-align: right;
 }
 
 .description-content {
-      display: flex;
-      justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-      &__description {
-            width: 47%;
-      }
+  &__description {
+    width: 47%;
+  }
 
-      &__equipment {
-            width: 47%;
-      }
+  &__equipment {
+    width: 47%;
+  }
 }
 .rate-container {
-      position: relative;
-      right: -5px;
+  position: relative;
+  right: -5px;
 }
 .star {
-      margin: 10px 5px;
-      height: 24px;
+  margin: 10px 5px;
+  height: 24px;
 }
 nav ul li a:hover {
-      text-decoration: underline
+  text-decoration: underline;
 }
 
 ul {
-      list-style-type: none;
+  list-style-type: none;
 }

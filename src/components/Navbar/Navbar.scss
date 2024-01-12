@@ -1,27 +1,27 @@
 .active {
-      text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav ul {
-   display: flex;  
-   gap: 40px;
-   font-size: $large-font-size;
+  display: flex;
+  gap: 40px;
+  font-size: $large-font-size;
 }
 
 nav ul li {
-      list-style: none;
+  list-style: none;
 }
 
- nav ul li a {
-      display: block;
-      text-decoration: none;
-      color: $primary-color;
-      font-weight: $medium-weight;
-      padding: 0.5rem;
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: $primary-color;
+  font-weight: $medium-weight;
+  padding: 0.5rem;
 }

@@ -1,16 +1,14 @@
-import logo from "../../assets/images/logo.svg"
+import logo from '../../assets/images/logo.svg'
 
-import Navbar from "../Navbar/Navbar"
+import Navbar from '../Navbar/Navbar'
 
 function Header() {
   return (
     <>
-    <header className="header-wrap">
-      <img src={logo} alt="logo kasa-platform" className="logo" />
-      <Navbar />
-    </header>
-    
-    
+      <header className="header-wrap">
+        <img src={logo} alt="logo kasa-platform" className="logo" />
+        <Navbar />
+      </header>
     </>
   )
 }

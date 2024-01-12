@@ -3,13 +3,10 @@ import AccommodationSheetDisplay from '../../components/Accommodationsheet/Accom
 
 function Chamberssheet() {
   return (
-    <div className='accommodation'>
-      
+    <div className="accommodation">
       <main className="main-wrapper">
-            <AccommodationSheetDisplay />
+        <AccommodationSheetDisplay />
       </main>
-
-      
     </div>
   )
 }
