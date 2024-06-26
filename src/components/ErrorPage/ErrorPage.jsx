@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 
 function ErrorPage() {
+  useEffect(() => {
+    document.title = `Erreur 404`
+  }, [])
   return (
     <main className="main-wrapper error">
       <h1 className="error">

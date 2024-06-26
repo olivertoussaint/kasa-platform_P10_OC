@@ -14,7 +14,7 @@ const Collapse = ({ title, content }) => {
     <div className="collapse_dropdown_container">
       <div className="collapse_dropdown_title">
         <h2>{title}</h2>
-        <div onClick={display}>
+        <p onClick={display}>
           {isOpen ? (
             <img
               src={pictureOne}
@@ -28,13 +28,13 @@ const Collapse = ({ title, content }) => {
               className={isOpen ? '' : 'initial-position'}
             />
           )}
-        </div>
+        </p>
       </div>
       <div className="collapse_dropdown_content">
         {isOpen ? (
-          <p className={'open'}>{content}</p>
+          <div className={'open'}>{content}</div>
         ) : (
-          <p className={'close'}>{content}</p>
+          <div className={'close'}>{content}</div>
         )}
       </div>
     </div>

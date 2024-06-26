@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ChambersSheetDatas from '../../datas/accommodation.json'
 import Collapse from '../Collapse/Collapse'
@@ -25,6 +25,10 @@ const AccommodationSheetDisplay = () => {
         <li>{equipment}</li>
       </ul>
     )
+  })
+
+  useEffect(()=> {
+    document.title=`${chambersSheet.title}`
   })
 
   return (

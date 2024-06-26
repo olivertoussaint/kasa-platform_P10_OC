@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import BannerAbout from '../../components/Banner/BannerAbout'
 import Collapse from '../../components/Collapse/Collapse'
 import CollapseData from '../../datas/collapses.json'
 
 function About() {
+  useEffect(() => {
+    document.title = `Kasa-Platform - A propos`
+  }, [])
+
   return (
     <>
       <main className="main-wrapper">

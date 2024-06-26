@@ -15,19 +15,26 @@ function Slideshow({ slides }) {
     setCurrent(current === 0 ? length - 1 : current - 1)
   }
 
-  if (!Array.isArray(slides) || !slides.length) {
-    return null //! rajouter une div
-  }
-
   return (
-    <section className="slide">
-      <div className="arrow-container">
-        <div className="left-arrow" onClick={prevImage}>
-          <img src={previousImg} alt="flèche directionnelle gauche" />
-        </div>
-        <div className="right-arrow" onClick={nextImage}>
-          <img src={nextImg} alt="flèche directionnelle droite" />
-        </div>
+    <section className="slideshow">
+      <div className="arrows-container">
+        {length > 1 && (
+          <img
+            src={previousImg}
+            alt="flèche directionnelle gauche"
+            onClick={prevImage}
+            className="left_arrow"
+          />
+        )}
+
+        {length > 1 && (
+          <img
+            src={nextImg}
+            alt="flèche directionnelle droite"
+            onClick={nextImage}
+            className="right_arrow"
+          />
+        )}
       </div>
 
       {slides.map((image, index) => {
