@@ -100,3 +100,9 @@ nav ul li a:hover {
 ul {
   list-style-type: none;
 }
+
+@media (max-width: 768px) {
+  .chambers-sheet-container {
+    margin: 0 1.5rem;
+  }
+}

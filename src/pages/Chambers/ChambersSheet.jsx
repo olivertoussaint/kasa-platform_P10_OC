@@ -4,7 +4,7 @@ import AccommodationSheetDisplay from '../../components/Accommodationsheet/Accom
 function Chamberssheet() {
   return (
     <div className="accommodation">
-      <main className="main-wrapper">
+      <main className="card-container">
         <AccommodationSheetDisplay />
       </main>
     </div>

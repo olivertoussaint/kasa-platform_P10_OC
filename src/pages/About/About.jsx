@@ -10,9 +10,9 @@ function About() {
 
   return (
     <>
-      <main className="main-wrapper">
+      <main className="card-container">
         <BannerAbout />
-        <div className="collapse">
+        <div className="collapse_about">
           <div className="collapse_dropdown">
             {CollapseData.map((elt) => {
               return (

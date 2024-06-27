@@ -23,7 +23,7 @@ function Slideshow({ slides }) {
             src={previousImg}
             alt="flèche directionnelle gauche"
             onClick={prevImage}
-            className="left_arrow"
+            className="left-arrow"
           />
         )}
 
@@ -32,7 +32,7 @@ function Slideshow({ slides }) {
             src={nextImg}
             alt="flèche directionnelle droite"
             onClick={nextImage}
-            className="right_arrow"
+            className="right-arrow"
           />
         )}
       </div>

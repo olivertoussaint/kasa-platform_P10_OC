@@ -5,8 +5,9 @@
   margin: 20px 0;
   width: 100%;
 }
+
 .collapse_dropdown {
-  width: 80%;
+  width: 100%;
 }
 
 .collapse_dropdown_title {
@@ -19,39 +20,35 @@
   margin: 10px 0;
   color: $tertiary-color;
   animation: visibility 0.2s ease-in;
+  cursor: pointer;
+
+  h2 {
+    font-size: $regular-font-size;
+    font-weight: $regular-weight;
+    line-height: 34.22px;
+  }
 }
 
-.collapse_dropdown_title h2 {
-  font-size: $regular-font-size;
-  font-weight: $regular-weight;
-  line-height: 34.22px;
-}
-
-.collapse_dropdown_content .open {
-  position: relative;
-  bottom: 10px;
-  @include small-radius;
-  color: $primary-color;
-  padding: 5px 20px;
-  background: $secondary-color;
-  font-size: $medium-font-size;
-  font-weight: $medium-weight;
-  line-height: 132%;
-  animation: visibility 0.3s ease-in;
-  height: auto;
-}
-
-.collapse_dropdown_content .close {
-  position: relative;
-  bottom: 250px;
+.collapse_dropdown_content {
+  overflow: hidden;
+  max-height: 0;
   opacity: 0;
-  height: 0;
-  color: $primary-color;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.collapse_dropdown_content.open {
+  max-height: 500px; /* Vous pouvez ajuster cette valeur selon la hauteur maximale prévue */
+  opacity: 1;
+}
+
+.collapse_dropdown_content_inner {
+  padding: 10px 20px;
   background: $secondary-color;
+  color: $primary-color;
   font-size: $medium-font-size;
   font-weight: $medium-weight;
   line-height: 132%;
-  transition: bottom 250ms, opacity 100ms, height 10s 10s;
+  @include small-radius;
 }
 
 p img {
@@ -73,11 +70,9 @@ p img {
     opacity: 0;
     transform: translateY(-5px);
   }
-
   50% {
     transform: translateY(0px);
   }
-
   to {
     opacity: 1;
   }

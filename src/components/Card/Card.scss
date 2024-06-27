@@ -40,3 +40,15 @@
   top: 0;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .card {
+    height: 280px;
+  }
+
+  .card_title {
+    font-size: 16px;
+    margin: 10px 15px;
+    line-height: 22px;
+  }
+}

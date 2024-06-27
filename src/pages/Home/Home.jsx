@@ -8,7 +8,7 @@ function Home() {
   }, [])
 
   return (
-    <main className="main-wrapper">
+    <main className="card-container">
       <Banner />
       <Gallery />
     </main>

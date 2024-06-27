@@ -1,18 +1,28 @@
 .slideshow {
   width: 100%;
 }
+
 .arrows-container {
   display: flex;
   position: absolute;
   width: 1240px;
-  top: calc(50% - 7rem);
+  top: calc(50% - 8rem);
   justify-content: space-between;
+  padding: 0 10px;
+
+  @include respond-to(mobile) {
+    top: calc(50% - 4em);
+  }
 }
 
-.left_arrow,
-.right_arrow {
+.left-arrow,
+.right-arrow {
+  height: 80px;
   cursor: pointer;
   transition: 0.3s;
+  @include respond-to(mobile) {
+    height: 60px;
+  }
 }
 
 .left-arrow {
@@ -29,6 +39,10 @@
   object-fit: cover;
   @include large-radius;
   animation: fade 0.3s ease-in-out;
+
+  @include respond-to(mobile) {
+    height: auto;
+  }
 }
 
 .slider__number {
@@ -39,6 +53,10 @@
   bottom: 50px;
   color: $tertiary-color;
   font-weight: $medium-weight;
+
+  @include respond-to(mobile) {
+    bottom: 25px;
+  }
 }
 
 .slider.active img {

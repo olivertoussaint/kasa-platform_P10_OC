@@ -27,8 +27,8 @@ const AccommodationSheetDisplay = () => {
     )
   })
 
-  useEffect(()=> {
-    document.title=`${chambersSheet.title}`
+  useEffect(() => {
+    document.title = `${chambersSheet.title}`
   })
 
   return (

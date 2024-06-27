@@ -1,3 +1,23 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == desktop {
+    @media (min-width: $breakpoint-desktop) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (max-width: $max-width) { @content; }
+  } @else if $breakpoint == mobile {
+    @media (max-width: $min-width) { @content; }
+  }
+}
+@mixin flex-container($justify: space-between, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-direction($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+}
+
 @mixin flex-center {
   display: flex;
   align-items: center;
@@ -20,18 +40,29 @@
   margin: 10px auto;
 }
 
-@mixin flex-about-banner {
+@mixin flex-about-banner($height: 223px, $margin: 10px auto) {
   position: relative;
   @include flex-center;
   width: 100%;
-  height: 223px;
-  margin: 10px auto;
+  height: $height;
+  margin: $margin;
+
+  @include respond-to(mobile) {
+    height: auto;
+    flex-direction: column;
+  }
+}
+@mixin flex-about-banner {
+  @include flex-banner;
   background: $background-banner-about;
 }
 
 @mixin font-display {
   font-size: 3em;
-  display: contents;
+  display: block;
+  @include respond-to(mobile) {
+    font-size: 2em;
+  }
 }
 
 @mixin linear-gradient {
